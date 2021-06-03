@@ -1,0 +1,118 @@
+<html>
+<head>
+    <title>
+        Form Elements
+    </title>
+</head>
+<body style="background-color: burlywood;">>
+<form name="REGISTRATION">
+    <h1 style="text-align: center;">REGISTRATION FORM</h1>
+<table align="center" cellpadding="10">
+<!--first name-->
+    <tr>
+        <td>FIRST NAME</td>
+        <td><input type="text" id="fname" name="fname" placeholder="enter your first name here..." size="40" required></td>
+        <label for="fname"></label></td>
+    </tr>
+<!--last name-->
+
+<tr>
+    <td>LAST NAME</td>
+    <td><input type="text" id="lname" name="lname" placeholder="enter your last name here..." size="40" required></td>
+    <label for="lname"></label>
+</tr>
+<!--user name-->
+<tr>
+    <td>USER NAME</td>
+    <td><input type="text" id="uname" name="username" placeholder="enter your user name here..." size="40" required></td>
+    <label for="uname"></label>
+</tr>
+<!--password-->
+<tr>
+    <td>PASSWORD</td>
+    <td><input type="password" id="pass" name="password" placeholder="enter your password here..." size="40" required></td>
+    <label for="pass"></label>
+</tr>
+<!--dob-->
+<tr>
+    <td>DATE OF BIRTH</td>
+    <td><input type="date" id="dob" name="dateofbirth" placeholder="enter your date of birth here..." size="40" required></td>
+    <label for="dob"></label>
+</tr>
+<!--email-->
+<tr>
+    <td>EMAIL ID</td>
+   <td><input type="email" id="email" name="email" placeholder="enter your email here..." size="40" required></td>
+   <label for="email"></label>      
+</tr>
+<!--mob-->
+<tr>
+    <td>MOBILE NUMBER</td>
+    <td><input type="text" id="mobile" name="mobile" placeholder="enter your mobile number here..." size="40" maxlength="10" required>(10 digit number)</td>
+    <label for="mobile"></label>
+</tr>
+<!--lang-->
+<tr>
+    <td>LANGUAGE KNOWN</td>
+    <td><input type="checkbox" id="lang1" name="language" value="ENGLISH" required>
+    <label id="lang1">ENGLISH</label>
+    <input type="checkbox" id="lang2" name="language" value="HINDI" required>
+        <label for="lang2">HINDI</label>
+    </td>
+</tr>
+<!--GENDER-->
+<tr>
+    <td>GENDER </td>
+    <td><input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">MALE</label>
+    <input type="radio" id="female"name="gender" value="female" required>
+        <label for="female">FEMALE</label></td>
+</tr>
+<!--address-->
+<tr>
+    <td>ADDRESS</td>
+   <td><textarea rows="10" cols="40" size="40" placeholder="enter your address here..." required> </textarea></td>
+</tr>
+<!--city-->
+<tr>
+    <td>CITY</td>
+    <td><input type="text" id="city" name="city" size="40" placeholder="enter your city here..." required>    </td>
+    <label for="city"></label>
+</tr>
+<!--pin-->
+<tr>
+    <td>PIN CODE</td>
+    <td> <input type="text" id="pin" name="pin code" size="40" placeholder="enter your pin code here" required>  </td>
+    <label for="pin"></label>
+</tr>
+ <!--state--> 
+<tr>
+    <td>STATE</td>
+    <td><input type="text" id="STATE" name="state" size="40" placeholder="enter your state here..." required>
+    <label for="state"></label>
+    </td>
+</tr>
+<!--country-->
+<tr>
+    <td>COUNTRY</td>
+    <td><input type="text" name="country" id="coun" size="40" placeholder="enter your country here..." required>
+    <label for="coun"></label>
+    </td></tr>
+<!--role-->
+<tr>
+    <td>ROLE</td>
+    <td><input list="roles">
+         <datalist id="roles">
+        <option value="student">
+        <option value="teacher">    
+         </datalist>        
+         </td>
+</tr>
+</table>
+<p style="text-align: center;">
+<input  type="button" onclick="alert('submitted the form')" value="Submit" required>
+<input  type="reset"> 
+</p>
+    </form>
+</body>
+</html>
